@@ -6,7 +6,7 @@
   "keywords": [],
   "author": "awol55 <awol55@brightnet.io>",
   "license": "MIT",
-  "peerDependencies": {
+  "devDependencies": {
     "ajv": "^6.10.2"
   }
 }
