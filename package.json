@@ -1,0 +1,9 @@
+{
+  "name": "@brightnet/serverless-paymail-eventschemas",
+  "version": "1.0.0-dev.1",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "awol55 <awol55@brightnet.io>",
+  "license": "MIT"
+}

@@ -1,0 +1,131 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://json.brightnet.io/serverless-paymail/address-issued-event.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "eventName",
+    "eventId",
+    "eventVersion",
+    "eventTime",
+    "paymailHandle",
+    "xPubKey",
+    "derivationBase",
+    "addressIndex",
+    "issuedAt",
+    "amount"
+  ],
+  "properties": {
+    "eventName": {
+      "$id": "#/properties/eventName",
+      "type": "string",
+      "title": "The Eventname Schema",
+      "default": "",
+      "examples": [
+        "AddressIssuedEvent"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "eventId": {
+      "$id": "#/properties/eventId",
+      "type": "string",
+      "title": "The Eventid Schema",
+      "default": "",
+      "examples": [
+        "4f86797167195594755e8950d9805b6b"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "eventVersion": {
+      "$id": "#/properties/eventVersion",
+      "type": "string",
+      "title": "The Eventversion Schema",
+      "default": "",
+      "examples": [
+        "1"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "eventTime": {
+      "$id": "#/properties/eventTime",
+      "type": "string",
+      "title": "The Eventtime Schema",
+      "default": "",
+      "examples": [
+        "1970-01-19T03:11:48.335Z"
+      ],
+      "pattern": "",
+      "format": null
+    },
+    "paymailHandle": {
+      "$id": "#/properties/paymailHandle",
+      "type": "string",
+      "title": "The Paymailhandle Schema",
+      "default": "",
+      "examples": [
+        "awol55@brightnet.io"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "idPubKey": {
+      "$id": "#/properties/idPubKey",
+      "type": "string",
+      "title": "The Idpubkey Schema",
+      "examples": [
+        "02a080b567b00a21f38ae024a8cde2e223be34ca134b1c24efe15469b42b144845"
+      ]
+    },
+    "xPubKey": {
+      "$id": "#/properties/xPubKey",
+      "type": "string",
+      "title": "The Xpubkey Schema",
+      "examples": [
+        "xpub661MyMwAqRbcEzvfDPpWCiK6UEiNNtA5TkdVZiuNiY9x4UHy1zWzWZEi5qk8hTSc5VxEUxynUrYwMGeJZ8y58dtCdAvQKwSGvnJWYU6qAh2"
+      ]
+    },
+    "derivationBase": {
+      "$id": "#/properties/derivationBase",
+      "type": "string",
+      "title": "The Derivationbase Schema",
+      "description": "The base within the extended public key from which new addresses are issued",
+      "examples": [
+        "m/0/",
+        "m/1/",
+        "m/44/0/0/"
+      ]
+    },
+    "addressIndex": {
+      "$id": "#/properties/addressIndex",
+      "type": "number",
+      "title": "The address index within the derivationBase that was issued for this event"
+    },
+    "issuedAt": {
+      "$id": "#/properties/issuedAt",
+      "type": "string",
+      "title": "Issued At",
+      "description": "ISO8601 Date-time string representating the time the address was issued to a paymail client",
+      "examples": [
+        "2019-08-25T04:45:35.151Z"
+      ],
+      "format": null
+    },
+    "issuedTo": {
+      "$id": "#/properties/issuedTo",
+      "type": "string",
+      "title": "Issued To",
+      "description": "Handle of the requester to which the address was issued",
+      "default": "",
+      "examples": [
+        "paymail@example.com"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "amount": {
+      "$id": "#/properties/amount",
+      "type": "number",
+      "title": "Amount",
+      "description": "Amount in satoshis"
+    }
+  }
+}

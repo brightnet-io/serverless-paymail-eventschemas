@@ -1,0 +1,1 @@
+module.exports.AddressIssuedEventJsonSchema = require('./schemas/address-issued-event');
