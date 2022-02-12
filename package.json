@@ -7,6 +7,6 @@
   "author": "awol55 <awol55@brightnet.io>",
   "license": "MIT",
   "devDependencies": {
-    "ajv": "^6.10.2"
+    "ajv": "^6.12.3"
   }
 }
